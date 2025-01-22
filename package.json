@@ -1,5 +1,7 @@
 {
+  "name": "changelog-parser",
   "type": "module",
+  "bin": "index.js",
   "devDependencies": {
     "commander": "^13.0.0",
     "keep-a-changelog": "^2.5.3"

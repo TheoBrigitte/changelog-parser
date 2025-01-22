@@ -12,6 +12,14 @@ A command-line tool to easily manage and manipulate changelog files, ensuring co
 - Show all changes in a release: Display all changes in a specific release.
 - Merge two or more changelog files: Combine multiple changelog files into one.
 
+## Installation
+
+```shell
+git clone https://github.com/TheoBrigitte/changelog-parser.git
+cd changelog-parser
+sudo npm install -g
+```
+
 ## Usage
 
 Default parameters use the `CHANGELOG.md` file in the current directory, this can be changed with the `-f` flag.
