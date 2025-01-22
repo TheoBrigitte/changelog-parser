@@ -2,7 +2,7 @@
     <img src="assets/changelog.png" alt="changelog" height="100px">
 </p>
 
-# Changelog parser
+# changelog parser
 
 A command-line tool to easily manage and manipulate changelog files, ensuring consistency with the [keep a changelog](https://keepachangelog.com) format.
 
