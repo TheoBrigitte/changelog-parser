@@ -2,6 +2,11 @@
     <img src="assets/changelog.svg" alt="changelog" height="100px">
 </p>
 
+<p align="center">
+  <a href="https://github.com/TheoBrigitte/changelog-parser/releases"><img src="https://img.shields.io/github/release/TheoBrigitte/changelog-parser.svg" alt="Github release"></a>
+  <a href="https://github.com/TheoBrigitte/changelog-parser/actions/workflows/build.yaml"><img src="https://github.com/TheoBrigitte/changelog-parser/actions/workflows/build.yaml/badge.svg" alt="Github action"></a>
+</p>
+
 # changelog parser
 
 A command-line tool to easily manage and manipulate changelog files, ensuring consistency with the [keep a changelog](https://keepachangelog.com) format.
