@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="assets/changelog.png" alt="changelog" height="100px">
+    <img src="assets/changelog.svg" alt="changelog" height="100px">
 </p>
 
 # changelog parser
