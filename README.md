@@ -59,7 +59,7 @@ changelog-parser init
 
 This command creates a new changelog file with the following content:
 
-```shell
+```markdown
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -81,14 +81,14 @@ This example uses default values, but title, description, url, and initial relea
 
 The `add` command adds a new change to the changelog file.
 
-```
+```shell
 changelog-parser add --type added "New feature"
 changelog-parser add --type security "Fix security issue"
 ```
 
 Those commands add the following content to the changelog file:
 
-```shell
+```markdown
 ### Added
 
 - New feature
@@ -136,7 +136,7 @@ changelog-parser list
 
 This command prints the following content:
 
-```shell
+```
 1.0.0
 0.1.0
 ```
@@ -151,7 +151,7 @@ changelog-parser show 1.0.0
 
 This command prints the following content:
 
-```shell
+```markdown
 ## [1.0.0] - 2025-01-21
 
 ### Added
