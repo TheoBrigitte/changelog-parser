@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "commander": "^13.0.0",
+    "keep-a-changelog": "^2.5.3"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0"
+  }
+}
