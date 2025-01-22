@@ -38,13 +38,13 @@ Default parameters use the `CHANGELOG.md` file in the current directory, this ca
 The `fmt` command parses and formats the changelog file to adhere to the keep a changelog format.
 
 ```shell
-changelog-parser fmt
+chlog fmt
 ```
 
 This command exits with a non-zero status code if the changelog format is invalid.
 
 ```shell
-changelog-parser fmt --silent || echo "Invalid changelog format"
+chlog fmt --silent || echo "Invalid changelog format"
 ```
 
 Changes can be written back to the file with the `--write` flag.
@@ -54,7 +54,7 @@ Changes can be written back to the file with the `--write` flag.
 The `init` command initializes a new changelog file.
 
 ```shell
-changelog-parser init
+chlog init
 ```
 
 This command creates a new changelog file with the following content:
@@ -82,8 +82,8 @@ This example uses default values, but title, description, url, and initial relea
 The `add` command adds a new change to the changelog file.
 
 ```shell
-changelog-parser add --type added "New feature"
-changelog-parser add --type security "Fix security issue"
+chlog add --type added "New feature"
+chlog add --type security "Fix security issue"
 ```
 
 Those commands add the following content to the changelog file:
@@ -103,7 +103,7 @@ Those commands add the following content to the changelog file:
 The `release` command adds a new release to the changelog file.
 
 ```shell
-changelog-parser release 1.0.0
+chlog release 1.0.0
 ```
 
 This command adds the following content to the changelog file:
@@ -131,7 +131,7 @@ A date can be specified with the `--date` flag.
 The `list` command lists all releases in the changelog file.
 
 ```shell
-changelog-parser list
+chlog list
 ```
 
 This command prints the following content:
@@ -146,7 +146,7 @@ This command prints the following content:
 The `show` command shows all changes in a release.
 
 ```shell
-changelog-parser show 1.0.0
+chlog show 1.0.0
 ```
 
 This command prints the following content:
@@ -168,7 +168,7 @@ This command prints the following content:
 The `merge` command merges two (or more) changelog files.
 
 ```shell
-changelog-parser merge other/CHANGELOG.md
+chlog merge other/CHANGELOG.md
 ```
 
 This command merges the content from `other/CHANGELOG.md` latest release into the current changelog file.
