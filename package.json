@@ -1,6 +1,6 @@
 {
   "description": "CLI tool to parse and manage changelog files",
-  "name": "chlog",
+  "name": "@theo.foobar/chlog",
   "bin": {
     "chlog": "index.js"
   },
