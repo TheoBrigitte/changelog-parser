@@ -1,15 +1,15 @@
-<p align="center">
-    <img src="assets/changelog.svg" alt="changelog" height="100px">
-</p>
-
-<p align="center">
-  <a href="https://github.com/TheoBrigitte/changelog-parser/releases"><img src="https://img.shields.io/github/release/TheoBrigitte/changelog-parser.svg" alt="Github release"></a>
-  <a href="https://github.com/TheoBrigitte/changelog-parser/actions/workflows/build.yaml"><img src="https://github.com/TheoBrigitte/changelog-parser/actions/workflows/build.yaml/badge.svg" alt="Github action"></a>
-</p>
+<div align="center">
+<img src="assets/changelog.svg" alt="changelog" height="100px">
 
 # changelog parser
 
+[![npm](https://img.shields.io/npm/v/@theo.foobar/chlog.svg)](https://www.npmjs.com/package/@theo.foobar/chlog)
+[![Github releases](https://img.shields.io/github/release/TheoBrigitte/changelog-parser.svg)](https://github.com/TheoBrigitte/changelog-parser/releases)
+[![Github action](https://github.com/TheoBrigitte/changelog-parser/actions/workflows/build.yaml/badge.svg)](https://github.com/TheoBrigitte/changelog-parser/actions/workflows/build.yaml)
+
 A command-line tool to easily manage and manipulate changelog files, ensuring consistency with the [keep a changelog](https://keepachangelog.com) format.
+
+</div>
 
 ## Features
 
