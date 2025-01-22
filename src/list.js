@@ -1,8 +1,8 @@
-import { parser } from "keep-a-changelog";
-import fs from "fs";
+const { parser } = require("keep-a-changelog");
+const fs = require("fs");
 
 // List all releases in the changelog file
-export function list(options) {
+function list(options) {
   // Read changelog file
   const changelog = parser(fs.readFileSync(options.file, options.encoding));
   changelog.sortReleases();
@@ -15,3 +15,5 @@ export function list(options) {
     console.log(release.version?.toString());
   }
 }
+
+module.exports = { list };

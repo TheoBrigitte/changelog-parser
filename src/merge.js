@@ -1,8 +1,8 @@
-import { parser } from "keep-a-changelog";
-import fs from "fs";
+const { parser } = require("keep-a-changelog");
+const fs = require("fs");
 
 // Merge changes from source changelog(s).
-export function merge(sources, options) {
+function merge(sources, options) {
   sources.forEach((source) => {
     try {
       mergeSingle(source, options);
@@ -14,7 +14,7 @@ export function merge(sources, options) {
 }
 
 // Merges changes from source changelog.
-export function mergeSingle(source, options) {
+function mergeSingle(source, options) {
   const s = source.split("@");
   const sourceFile = s[0];
   const sourceRelease = s[1]?.replace(/^v/, "") || "latest";
@@ -51,7 +51,7 @@ export function mergeSingle(source, options) {
 }
 
 // Get changes from source changelog starting at sourceRelease up to the number of releases specified in options.number
-export function changesFromRelease(sourceChangelog, sourceRelease, options) {
+function changesFromRelease(sourceChangelog, sourceRelease, options) {
   // Ensure releases are sorted
   sourceChangelog.sortReleases();
 
@@ -95,3 +95,5 @@ export function changesFromRelease(sourceChangelog, sourceRelease, options) {
 
   return changes;
 }
+
+module.exports = { merge };

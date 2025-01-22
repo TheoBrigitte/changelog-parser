@@ -1,8 +1,8 @@
-import { parser } from "keep-a-changelog";
-import fs from "fs";
+const { parser } = require("keep-a-changelog");
+const fs = require("fs");
 
 // Format changelog file
-export function fmt(options) {
+function fmt(options) {
   // Parse changelog file
   const changelog = parser(fs.readFileSync(options.file, options.encoding));
   changelog.format = options.format;
@@ -19,3 +19,5 @@ export function fmt(options) {
 
   console.log(changelog.toString());
 }
+
+module.exports = { fmt };
