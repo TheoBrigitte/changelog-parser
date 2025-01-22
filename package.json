@@ -1,13 +1,33 @@
 {
+  "description": "CLI tool to parse and manage changelog files",
   "name": "changelog-parser",
-  "type": "module",
-  "bin": "index.js",
+  "bin": {
+    "changelog-parser": "index.js"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0"
+  },
   "devDependencies": {
     "commander": "^13.0.0",
     "keep-a-changelog": "^2.5.3"
   },
-  "dependencies": {
-    "@actions/core": "^1.11.1",
-    "@actions/github": "^6.0.0"
-  }
+  "author": "Theo Brigitte <theo.brigitte@gmail.com>",
+  "homepage": "https://github.com/TheoBrigitte/changelog-parser#readme",
+  "bugs": {
+    "url": "https://github.com/TheoBrigitte/changelog-parser/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheoBrigitte/changelog-parser.git"
+  },
+  "keywords": [
+    "changelog",
+    "cli",
+    "parser"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "version": "0.1.0"
 }
