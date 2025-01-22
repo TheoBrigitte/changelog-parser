@@ -1,8 +1,8 @@
-import { Changelog, Release } from "keep-a-changelog";
-import fs from "fs";
+const { Changelog, Release } = require("keep-a-changelog");
+const fs = require("fs");
 
 // Initialize a new changelog file
-export function init(options) {
+function init(options) {
   // Create a new changelog
   const changelog = new Changelog(options.title, options.description);
   changelog.format = options.format
@@ -18,3 +18,5 @@ export function init(options) {
 
   fs.writeFileSync(options.file, changelog.toString(), { encoding: options.encoding });
 }
+
+module.exports = { init };

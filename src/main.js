@@ -1,14 +1,14 @@
-import { Command, InvalidArgumentError } from "commander";
-import { Release } from "keep-a-changelog";
-import { add } from "./add.js";
-import { fmt } from "./fmt.js";
-import { init } from "./init.js";
-import { list } from "./list.js";
-import { merge } from "./merge.js";
-import { release } from "./release.js";
-import { show } from "./show.js";
+const { Command, InvalidArgumentError } = require("commander");
+const { Release } = require("keep-a-changelog");
+const { add } = require("./add.js");
+const { fmt } = require("./fmt.js");
+const { init } = require("./init.js");
+const { list } = require("./list.js");
+const { merge } = require("./merge.js");
+const { release } = require("./release.js");
+const { show } = require("./show.js");
 
-export function cmd() {
+function main() {
   class rootCommand extends Command {
     createCommand(name) {
       const cmd = new Command(name);
@@ -91,3 +91,5 @@ export function cmd() {
 
   return program;
 }
+
+module.exports = { main };

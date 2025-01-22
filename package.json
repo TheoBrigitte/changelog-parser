@@ -6,11 +6,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "@actions/core": "^1.11.1",
-    "@actions/github": "^6.0.0"
-  },
-  "devDependencies": {
-    "commander": "^13.0.0",
+    "commander": "^13.1.0",
     "keep-a-changelog": "^2.5.3"
   },
   "author": "Theo Brigitte <theo.brigitte@gmail.com>",
@@ -28,6 +24,5 @@
     "parser"
   ],
   "license": "MIT",
-  "type": "module",
   "version": "0.1.0"
 }

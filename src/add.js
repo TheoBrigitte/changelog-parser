@@ -1,8 +1,8 @@
-import { parser, Release, Change } from "keep-a-changelog";
-import fs from "fs";
+const { parser, Release, Change } = require("keep-a-changelog");
+const fs = require("fs");
 
 // Add a new change to the changelog
-export function add(title, description, options) {
+function add(title, description, options) {
   // Parse changelog file
   const changelog = parser(fs.readFileSync(options.file, options.encoding));
   changelog.format = options.format;
@@ -22,3 +22,5 @@ export function add(title, description, options) {
   // Save changes to file
   fs.writeFileSync(options.file, changelog.toString());
 }
+
+module.exports = { add };

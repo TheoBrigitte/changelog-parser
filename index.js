@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-import { cmd } from './src/main.js';
+var { main } = require('./src/main.js');
 
 try {
   // Run the program
-  cmd().parse();
+  main().parse();
 } catch (error) {
   if (error instanceof Error) {
     console.error(`Failed: ${error.message}`);

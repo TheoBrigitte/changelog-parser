@@ -1,7 +1,8 @@
-import { parser, Release } from "keep-a-changelog";
-import fs from "fs";
+const { parser, Release } = require("keep-a-changelog");
+const fs = require("fs");
 
-export function release(version, options) {
+// Release a new version
+function release(version, options) {
   const changelog = parser(fs.readFileSync(options.file, options.encoding));
   changelog.format = options.format;
 
@@ -22,3 +23,5 @@ export function release(version, options) {
 
   fs.writeFileSync(options.file, changelog.toString());
 }
+
+module.exports = { release };
