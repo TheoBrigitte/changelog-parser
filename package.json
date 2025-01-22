@@ -1,8 +1,8 @@
 {
   "description": "CLI tool to parse and manage changelog files",
-  "name": "changelog-parser",
+  "name": "chlog",
   "bin": {
-    "changelog-parser": "index.js"
+    "chlog": "index.js"
   },
   "main": "index.js",
   "dependencies": {

@@ -32,7 +32,7 @@ function main() {
 
   // Define the main program
   program
-    .name("changelog-parser")
+    .name("chlog")
     .description("A command-line tool to parse and manipulate changelog files")
     .version("0.1.0")
 
