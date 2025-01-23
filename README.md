@@ -23,6 +23,14 @@ A command-line tool to easily manage and manipulate changelog files, ensuring co
 
 ## Installation
 
+### From npm
+
+```shell
+npm install -g @theo.foobar/chlog
+```
+
+### From source
+
 ```shell
 git clone https://github.com/TheoBrigitte/changelog-parser.git
 cd changelog-parser
