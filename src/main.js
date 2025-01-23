@@ -34,7 +34,7 @@ function main() {
   program
     .name("chlog")
     .description("A command-line tool to parse and manipulate changelog files")
-    .version("0.1.0")
+    .version("0.2.0")
 
   // Define commands
   const changeTypes = Array.from(new Release().changes.keys()).join(", ");
